@@ -2,7 +2,7 @@
     1. Hetkel loodud kell on 24 tunni kell. Muutke see 12 tunni kellaks. ---DONE---
     2. "Tarne hind" nupule vajutamisel peaks näitama, palju tuleb tarne eest maksta (hinnad on koodis kommentaaridena kirjas). ---DONE---
     3. Täiendage olemasolev vorm raadionuppudega, mille sisu valige ise (seotud tarnega), ja kujundage see style.css failis (css-faili uue osa juurde lisage kommentaar). ---DONE---
-    4. Lisage vormile sisendi kontroll: tekstiväljad ei tohi olla tühjad, ei tohi sisaldada numbreid, üks raadionuppudest peab olema valitud (vastasel juhul visatakse ette alert aken) jne.
+    4. Lisage vormile sisendi kontroll: tekstiväljad ei tohi olla tühjad (---DONE---), ei tohi sisaldada numbreid, üks raadionuppudest peab olema valitud (---DONE---) (vastasel juhul visatakse ette alert aken) jne.
     5. lisage kaardile mõni teine aadress, mis ei asu Tartus (kasutada turvalist protokolli ehk https://..). Lisage uuele aadressile marker ja muutke kaardi keskpunkt ja suum nii, et mõlemad kohad oleksid kaardil vaikimisi nähtavad.
     6. Uurige API dokumentatsioon ja lisage kaardile infobox'id, mis ilmuvad markerile vajutades.
 */
@@ -78,6 +78,18 @@
         event.preventDefault();
 
 
+/*      var letters = /^[A-Za-z]+$/;
+        let fname = document.getElementById("fname");
+        let lname = document.getElementById("lname");
+
+        if (!(fname.matches(letters) && lname.matches(letters))) {
+            alert("Palun kasutage nime kirjutamisel ainult tähti");
+            
+            fname.focus();
+            
+            return;
+        } */
+
         let button1 = document.getElementById("button1").checked;
         let button2 = document.getElementById("button2").checked;
 
@@ -88,6 +100,10 @@
             
             return;
         }
+
+
+
+
 
         let linn = document.getElementById("linn");
         
