@@ -76,7 +76,19 @@
         // Kontrollime siis, kui kasutaja on "Arvuta tarne hind" nupule vajutanud.
 
         event.preventDefault();
-        
+
+
+        let button1 = document.getElementById("button1").checked;
+        let button2 = document.getElementById("button2").checked;
+
+        if (!(button1 || button2)) {
+            alert("Palun valige teavituse viis!");
+            
+            button1.focus();
+            
+            return;
+        }
+
         let linn = document.getElementById("linn");
         
         if (linn.value === "") {

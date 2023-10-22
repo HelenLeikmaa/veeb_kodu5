@@ -20,14 +20,15 @@
             <h3>2. osa: Vormid</h3>
             <form id="form">
                 <!-- input field --->
-                <div id="input-fields">
+                <!--tekstiväljad ei tohi olla tühjad-->
+                <div id="input-fields"> 
                     <div id="first-name">
                         <label for="fname">Eesnimi:</label>
-                        <input type="text" id="fname" name="fname">
+                        <input type="text" id="fname" name="fname" required>
                     </div>
                     <div id="last-name">
                         <label for="lname">Perekonnanimi:</label>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="lname" required>
                     </div>
                 </div>
                 <!-- checkbox --->
